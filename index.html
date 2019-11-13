@@ -8,9 +8,18 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	 <style>
+  	<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 
-  /* Make the image fully responsive */
+	 <style>
+  body{
+  	font-family: 'Kalam', cursive;
+  	font-size:20px;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+  	font-family: 'Prompt', sans-serif;
+  }
   .carousel-inner img {
       width: 100%;
   }  
@@ -19,8 +28,9 @@
   background-color: black;
 }
 .jumbotron{
-background-image: url(./img/flowers.jpg);
+background-image: url(./img/black-and-white.jpg);
 color:white;
+font-weight: bold;
 }
 @media (min-width: 992px) { 
   .card-columns{
@@ -99,7 +109,7 @@ color:white;
         				<a class="nav-link" onclick="AboutUs();" style="cursor: pointer;">About Us</a>
       				</li>
       				<li class="nav-item">
-        				<a class="nav-link" id="category" onclick="Category();" style="cursor: pointer;">Category</a>
+        				<a class="nav-link"  onclick="Category();" style="cursor: pointer;">Category</a>
       				</li>
       				<li class="nav-item">
         				<a class="nav-link" href="#" style="cursor: pointer;">Buy Online</a>
