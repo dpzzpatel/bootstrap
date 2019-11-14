@@ -10,40 +10,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   	<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
-
-	 <style>
-  body{
-  	font-family: 'Kalam', cursive;
-  	font-size:20px;
-  }
-
-  h1,h2,h3,h4,h5,h6{
-  	font-family: 'Prompt', sans-serif;
-  }
-  .carousel-inner img {
-      width: 100%;
-  }  
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-}
-.jumbotron{
-background-image: url(./img/black-and-white.jpg);
-color:white;
-font-weight: bold;
-}
-@media (min-width: 992px) { 
-  .card-columns{
-  	column-count:3;
-  }
-}
-@media (max-width: 992px) { 
-  .card-columns{
-  	column-count:2;
-  }
-}
-
-  </style>
+  	<link href="./styles.css" rel="stylesheet">
 </head>
 <body>
     <div class=".fluid-container">
@@ -179,103 +146,35 @@ font-weight: bold;
         
         
         <!-- About Page -->
-		<div id="about" style="display: none">
-	  		<div class="jumbotron  container">
-	  			<div class="container">
-	    			<h1>About Us</h1>      
-	    			<p>Seventy years bringing floral arrangments</p>
-	    			<p>to the city of Limerick</p>
-	  			</div>
-			</div>
-
-			<div class="container">
-	  			<p>Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence. Person plenty answer to exeter it if. Law use assistance especially resolution cultivated did out sentiments unsatiable. Way necessary had intention happiness but september delighted his curiosity. Furniture furnished or on strangers neglected remainder engrossed. </p>         
-			</div>
-		</div>
+        <div id="about" class="container">
+        </div>
         
-         <!-- Category Page -->
-        <div class=".fluid-container" id="category" style="display: none">
-        	<div class="row">
-        		<div class="col-md-3">
-        			<h3>Filter</h3>
-        			<hr>
-        			<h4>Flower</h4>
-        			<input type="checkbox" name="Lily" value="Lily"> Lily<br>
-        			<input type="checkbox" name="Carnation" value="Carnation"> Carnation<br>
-        			<input type="checkbox" name="Chrysanthemum" value="Chrysanthemum"> Chrysanthemum<br>
-        			<input type="checkbox" name="Rose" value="Rose"> Rose<br>
-        			<hr>
-        			<h4>Colour</h4>
-        			<input type="checkbox" name="Pink" value="Pink">Pink <br>
-        			<input type="checkbox" name="Orange" value="Orange">Orange <br>
-        			<input type="checkbox" name="Purple" value="Purple">Purple <br>
-        			<input type="checkbox" name="White" value="White"> White<br>
-        			<input type="checkbox" name="Red" value="Red">Red<br>
-        		</div>
-        		<div class="col-md-9">
-        			<h1>Birthday Flowers</h1>
-        			<div class="row">
-        				<div class="col">
-	        				<ul class="pagination">
-							    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-							    <li class="page-item"><a class="page-link" href="#">1</a></li>
-							    <li class="page-item"><a class="page-link" href="#">2</a></li>
-							    <li class="page-item"><a class="page-link" href="#">3</a></li>
-							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-							  </ul>
-        				</div>
-        			</div>
-
-        			<div class="row">
-	        			<div class="card-columns">
-							<div class="card">
-								<img class="card-img-top" src="./img/1.jpeg" alt="Card image" style="width:100%;">
-								<div class="card-body">
-									<h4 class="card-title">Polkadots</h4>
-									 <p class="card-text"><b>34$</b></p>
-									  <a href="#" class="btn btn-primary">Buy</a>
-									  <a href="#" class="btn btn-primary">View</a>
-								</div>
-							</div>		
-		        				
-		        			<div class="card">
-								<img class="card-img-top" src="./img/2.jpg" alt="Card image" style="width:100%;">
-								<div class="card-body">
-									<h4 class="card-title">Red Roses</h4>
-									<p class="card-text"><b>35$</b></p>
-									<a href="#" class="btn btn-primary">Buy</a>
-									<a href="#" class="btn btn-primary">View</a>
-								</div>
-							</div>
-		        			<div class="card">
-								<img class="card-img-top" src="./img/6.jpg" alt="Card image" style="width:100%;">
-								<div class="card-body">
-									<h4 class="card-title">Lilies<span class="badge badge-secondary">New</span></h4>
-
-									    <p class="card-text"><b>35$</b></p>
-									    <a href="#" class="btn btn-primary">Buy</a>
-									    <a href="#" class="btn btn-primary">View</a>
-								</div>
-							</div>
-							<div class="card">
-								<img class="card-img-top" src="./img/4.png" alt="Card image" style="width:100%;">
-								<div class="card-body">
-									<h4 class="card-title">Tulips</h4>
-									    <p class="card-text"><b>40$</b></p>
-									    <a href="#" class="btn btn-primary">Buy</a>
-									    <a href="#" class="btn btn-primary">View</a>
-								</div>
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div>
+		
+		<!-- Category Page -->
+        
+		<div id="category" class=".fluid-container">
         </div>
 
-   	</div>
+        
+
+   
    	<script type="text/javascript">
+            function load(element,url) {
+                var xhr=new XMLHttpRequest();
+                xhr.open('get', url, true);
+                xhr.send(null);
+                xhr.onreadystatechange=function() {
+                    if (this.readyState==4) {
+                        element.innerHTML=this.responseText;
+                    }
+                }
+            }
+
    		function AboutUs()
    		{
+			var abt=document.getElementById('about');
+			var url='./AboutUs.html';
+			load(abt,url);
    			document.getElementById("home").style.display="none";
    			document.getElementById("category").style.display="none";
    			document.getElementById("about").style.display="block";
@@ -283,16 +182,19 @@ font-weight: bold;
    		function Home()
    		{
    			document.getElementById("about").style.display="none";
-   			document.getElementById("category").style.display="none";
+			document.getElementById("category").style.display="none";
    			document.getElementById("home").style.display="block";
    		}
    		function Category()
    		{
+			var ct=document.getElementById('category');
+			var url='./category.html';
+			load(ct,url);
    			document.getElementById("about").style.display="none";
    			document.getElementById("home").style.display="none";
    			document.getElementById("category").style.display="block";
    		}
-
+        
    	</script>
 </body>
 </html>
