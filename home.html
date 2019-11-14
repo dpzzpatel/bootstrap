@@ -11,6 +11,7 @@
   	<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
   	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
   	<link href="./styles.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class=".fluid-container">
@@ -143,58 +144,7 @@
 	  			</div>
 	  		</div>
 		</div>
-        
-        
-        <!-- About Page -->
-        <div id="about" class="container">
-        </div>
-        
-		
-		<!-- Category Page -->
-        
-		<div id="category" class=".fluid-container">
-        </div>
 
-        
-
-   
-   	<script type="text/javascript">
-            function load(element,url) {
-                var xhr=new XMLHttpRequest();
-                xhr.open('get', url, true);
-                xhr.send(null);
-                xhr.onreadystatechange=function() {
-                    if (this.readyState==4) {
-                        element.innerHTML=this.responseText;
-                    }
-                }
-            }
-
-   		function AboutUs()
-   		{
-			var abt=document.getElementById('about');
-			var url='./AboutUs.html';
-			load(abt,url);
-   			document.getElementById("home").style.display="none";
-   			document.getElementById("category").style.display="none";
-   			document.getElementById("about").style.display="block";
-   		}
-   		function Home()
-   		{
-   			document.getElementById("about").style.display="none";
-			document.getElementById("category").style.display="none";
-   			document.getElementById("home").style.display="block";
-   		}
-   		function Category()
-   		{
-			var ct=document.getElementById('category');
-			var url='./category.html';
-			load(ct,url);
-   			document.getElementById("about").style.display="none";
-   			document.getElementById("home").style.display="none";
-   			document.getElementById("category").style.display="block";
-   		}
-        
-   	</script>
+  <script src="./scripts.js"></script>
 </body>
 </html>
